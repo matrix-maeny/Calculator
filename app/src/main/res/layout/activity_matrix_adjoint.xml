@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#061C3A"
+    android:orientation="vertical"
+    tools:context=".activities.MatrixAdjointActivity">
+
+    <include
+        android:id="@+id/adjointToolbar"
+        layout="@layout/toolbar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Enter Matrix"
+                android:textColor="#F3F5F6" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:background="@drawable/matrix_background"
+                android:elevation="40dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:padding="15dp">
+
+                    <EditText
+                        android:id="@+id/adjMatrix11"
+                        android:layout_width="70dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/matrix_textview_background"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="numberSigned"
+                        android:minHeight="48dp"
+                        android:text="0"
+                        android:textColor="#F3F5F6"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/adjMatrix12"
+                        android:layout_width="70dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/matrix_textview_background"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="numberSigned"
+                        android:minHeight="48dp"
+                        android:text="0"
+                        android:textColor="#F3F5F6"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/adjMatrix13"
+                        android:layout_width="70dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/matrix_textview_background"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="numberSigned"
+                        android:minHeight="48dp"
+                        android:text="0"
+                        android:textColor="#F3F5F6"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:padding="15dp">
+
+                    <EditText
+                        android:id="@+id/adjMatrix21"
+                        android:layout_width="70dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/matrix_textview_background"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="numberSigned"
+                        android:minHeight="48dp"
+                        android:text="0"
+                        android:textColor="#F3F5F6"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/adjMatrix22"
+                        android:layout_width="70dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/matrix_textview_background"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="numberSigned"
+                        android:minHeight="48dp"
+                        android:text="0"
+                        android:textColor="#F3F5F6"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/adjMatrix23"
+                        android:layout_width="70dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/matrix_textview_background"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="numberSigned"
+                        android:minHeight="48dp"
+                        android:text="0"
+                        android:textColor="#F3F5F6"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:padding="15dp">
+
+                    <EditText
+                        android:id="@+id/adjMatrix31"
+                        android:layout_width="70dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/matrix_textview_background"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="numberSigned"
+                        android:minHeight="48dp"
+                        android:text="0"
+                        android:textColor="#F3F5F6"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/adjMatrix32"
+                        android:layout_width="70dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/matrix_textview_background"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="numberSigned"
+                        android:minHeight="48dp"
+                        android:text="0"
+                        android:textColor="#F3F5F6"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/adjMatrix33"
+                        android:layout_width="70dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/matrix_textview_background"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="numberSigned"
+                        android:minHeight="48dp"
+                        android:text="0"
+                        android:textColor="#F3F5F6"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_margin="5dp"
+            android:background="#858080" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/resultText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingStart="1dp"
+                android:paddingEnd="70dp"
+                android:text="Result"
+                android:textColor="#F3F5F6" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/matrix_background"
+                    android:elevation="40dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:padding="15dp">
+
+                        <TextView
+                            android:id="@+id/adjResult11"
+                            android:layout_width="70dp"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/matrix_textview_background"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:inputType="numberSigned"
+                            android:minHeight="48dp"
+                            android:text="0"
+                            android:textColor="#F3F5F6"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/adjResult12"
+                            android:layout_width="70dp"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/matrix_textview_background"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:inputType="numberSigned"
+                            android:minHeight="48dp"
+                            android:text="0"
+                            android:textColor="#F3F5F6"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/adjResult13"
+                            android:layout_width="70dp"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/matrix_textview_background"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:inputType="numberSigned"
+                            android:minHeight="48dp"
+                            android:text="0"
+                            android:textColor="#F3F5F6"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:padding="15dp">
+
+                        <TextView
+                            android:id="@+id/adjResult21"
+                            android:layout_width="70dp"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/matrix_textview_background"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:inputType="numberSigned"
+                            android:minHeight="48dp"
+                            android:text="0"
+                            android:textColor="#F3F5F6"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/adjResult22"
+                            android:layout_width="70dp"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/matrix_textview_background"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:inputType="numberSigned"
+                            android:minHeight="48dp"
+                            android:text="0"
+                            android:textColor="#F3F5F6"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/adjResult23"
+                            android:layout_width="70dp"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/matrix_textview_background"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:inputType="numberSigned"
+                            android:minHeight="48dp"
+                            android:text="0"
+                            android:textColor="#F3F5F6"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:padding="15dp">
+
+                        <TextView
+                            android:id="@+id/adjResult31"
+                            android:layout_width="70dp"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/matrix_textview_background"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:inputType="numberSigned"
+                            android:minHeight="48dp"
+                            android:text="0"
+                            android:textColor="#F3F5F6"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/adjResult32"
+                            android:layout_width="70dp"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/matrix_textview_background"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:inputType="numberSigned"
+                            android:minHeight="48dp"
+                            android:text="0"
+                            android:textColor="#F3F5F6"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/adjResult33"
+                            android:layout_width="70dp"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/matrix_textview_background"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:inputType="numberSigned"
+                            android:minHeight="48dp"
+                            android:text="0"
+                            android:textColor="#F3F5F6"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/adjEqualBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_background1"
+                        android:elevation="20dp"
+
+                        android:text="Adj"
+                        android:textAllCaps="false"
+                        android:textColor="#F3F5F6"
+                        android:textSize="24sp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/adjInverseBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_background1"
+                        android:elevation="20dp"
+                        android:text="@string/matrixInverse"
+                        android:textAllCaps="false"
+                        android:textColor="#F3F5F6"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

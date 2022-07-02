@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:layout_marginTop="10dp"
+    android:background="#061C3A"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="#061C3A"
+        android:backgroundTint="#061C3A"
+        android:elevation="30dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_gradient_2"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/cnvtrImage"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/tax" />
+
+            <TextView
+                android:id="@+id/cnvtrName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/aclonica"
+                android:gravity="center"
+                android:text="Calculator"
+                android:textColor="#F3F5F6"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

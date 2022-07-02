@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#061C3A"
+    android:orientation="vertical"
+    tools:context=".activities.AboutActivity">
+
+    <include
+        android:id="@+id/aboutToolbar"
+        layout="@layout/toolbar_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarThumbVertical="@drawable/button_background2">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:scrollbarSize="6dp">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:includeFontPadding="true"
+                android:padding="10dp"
+                android:text="Hi, I'm Matrix."
+                android:textColor="#F3F5F6"
+                android:textSize="16sp" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:padding="10dp"
+                android:text='The application Calculator, which you are using now, consists of basic calculative things which can be used in our routine.\n\nIt consists of \"Calculator\","Converter","Daily Life","Matrices".\n\nCalculator:\nIt consists of basic calculation part and trigonometric functions,inverse trigonometric functions with degrees manipulation,and e,π as constants.The Numeric System converter also attached to it.\n\nConverter:\nThis is an Universal Unit converter to a certain extent.\nIt consists of Area, Length, Volume, Temperature, Speed, Time, Weight, and Data converters.\n\nDaily Life:\nIt consists of basic needs in our daily life.\nFor now we have included Age calculator only.\n\nMatrices:\nIt consists of calculators of matrix calculations.\nFor now we have included Multiplication ,Adjoint and Inverse conversion.\n\nUpdates will come soon..'
+
+                android:textColor="#F3F5F6"
+                android:textSize="16sp" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:padding="10dp"
+                android:text="Date of creation: Nov 7 2021\nEmail us:   matrixinventions@gmail.com"
+                android:textColor="#F3F5F6"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
